@@ -14,5 +14,11 @@ def sortNumbers(numbers):
     numbers.sort()
     print(numbers)
 
+def goagain():
+    again = input("Would you like to go again? [Y] or [N]")
+    if again == "Y" or again == "y":
+        sortNumbers(getNumbers())
+
 if __name__ == "__main__":
     sortNumbers(getNumbers())
+    goagain()
